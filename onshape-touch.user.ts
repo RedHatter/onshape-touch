@@ -138,7 +138,7 @@
 
           break
 
-        case Mode.ZoomPan:
+        case Mode.ZoomPan: {
           dispatchEvent(e, 'mousemove', { button: 2 })
 
           const distance = Math.hypot(
@@ -156,6 +156,7 @@
           prevDistance = distance
 
           break
+        }
 
         case Mode.PreRotate:
           mode = Mode.Rotate
