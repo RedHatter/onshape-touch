@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "format": "prettier -w *.js *.ts *.json",
-    "lint": "eslint *.ts",
+    "format": "prettier -w dist/*.js src/*.ts *.json",
+    "lint": "eslint src/*.ts",
     "prepare": "husky"
   },
   "keywords": [],
