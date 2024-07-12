@@ -22,6 +22,14 @@
    */
   const CONTEXT_MENU_TIMEOUT = 1000
 
+  // After the DOM is loaded insert web app manifest
+  document.addEventListener('DOMContentLoaded', () => {
+    const link = document.createElement('link')
+    link.setAttribute('rel', 'manifest')
+    link.setAttribute('href', 'https://raw.githubusercontent.com/RedHatter/onshape-touch/main/manifest.json')
+    document.head.append(link)
+  })
+
   let canvas: HTMLElement | null
 
   /**
