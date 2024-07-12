@@ -26,7 +26,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const link = document.createElement('link')
     link.setAttribute('rel', 'manifest')
-    link.setAttribute('href', 'https://raw.githubusercontent.com/RedHatter/onshape-touch/main/manifest.json')
+    link.setAttribute('href', 'https://raw.githubusercontent.com/RedHatter/onshape-touch/main/dist/manifest.json')
     document.head.append(link)
   })
 
